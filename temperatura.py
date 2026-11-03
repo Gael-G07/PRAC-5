@@ -8,7 +8,7 @@ def leer_temperatura():
 def main():
     temperatura = leer_temperatura()
     print(f"Temperatura: {temperatura} C")
-    if temperatura <= LIMITE:
+    if temperatura > LIMITE:
         print("ALERTA: Encender motor")
     else:
         print("Temperatura normal: Apagar motor")
